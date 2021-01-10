@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+:root {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+}
+body {
+  background-color: #eff1ed;
+  min-height: 100vh;
+}
+h1 {
+  color: #161032;
+  font-family: "Baloo Tamma", sans-serif;
+  font-size: 1.5rem;
+}
+h1::after {
+  background-color: #00a8e8;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.25rem;
+  position: absolute;
+  width: 1rem;
+}
+p {
+  color: rgba(0, 0, 0, 0.8);
+}
+.container {
+  margin: 0 auto 2rem;
+  max-width: 900px;
+  padding: 0 1.5rem;
+}
+.sample-item-1 {
+  background-color: #99e1d9;
+  height: 150px;
+  min-width: 200px;
+  width: 200px;
+}
+.sample-item-2 {
+  background-color: #32292f;
+  height: 200px;
+  min-width: 150px;
+  width: 150px;
+}
+.sample-item-3 {
+  background-color: #d81e5b;
+  height: 125px;
+  min-width: 225px;
+  width: 225px;
+}
+.horizontal-scrolling-banner {
+  overflow: hidden;
+}
+.horizontal-scrolling-banner__helper-wrapper {
+  align-items: center;
+  display: flex;
+  left: 0;
+  transform: translateZ(0);
+  transition-property: left;
+  transition-timing-function: linear;
+}

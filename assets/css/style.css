@@ -1236,3 +1236,8 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.justifyClass {
+  text-align: justify;
+  text-justify: inter-word;
+}
